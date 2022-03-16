@@ -29,7 +29,7 @@ do
       nomAntiguo="$directorioHome/$i"
     fi   
 done
-echo "Directorio destino de copia: $nomAntiguo"
+echo "Directorio destino de copia:$nomAntiguo"
 #Vamos al direcotio origen
 cd $directorioOrigen
 contador=0
