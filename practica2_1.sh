@@ -1,6 +1,6 @@
 #!/bin/bash
-#818058, Arcega Vela, Hector, [T], [2], [A]
-#821038, Alonso Gutierrez, Simon, [T], [2], [A]
+#818058, Arcega, Hector, T, 2, A
+#821038, Alonso, Simon, T, 2, A
 
 echo "Introduzca el nombre del fichero: "
 read nfich
@@ -34,4 +34,3 @@ then
 else 
 	echo "$nfich no existe"
 fi
-
