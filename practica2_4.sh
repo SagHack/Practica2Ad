@@ -1,4 +1,7 @@
 #!/bin/bash
+#818058, Arcega Vela, Hector, [T], [2], [A]
+#821038, Alonso Gutierrez, Simon, [T], [2], [A]
+
 OLDIFS=$IFS #Guardo el IFS en una variable para luego poder recuperarlo
 IFS='' #Si cambio el IFS a nulo, al hacer read no me ignora los espacios del principio
 echo -n "Introduzca una tecla: "
