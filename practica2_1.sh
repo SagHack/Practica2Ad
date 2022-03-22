@@ -1,4 +1,7 @@
 #!/bin/bash
+#818058, Arcega Vela, Hector, [T], [2], [A]
+#821038, Alonso Gutierrez, Simon, [T], [2], [A]
+
 echo "Introduzca el nombre del fichero: "
 read nfich
 #Tener cuidado por que no lo hacemos para que funcione en todos los directorios
