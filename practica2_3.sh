@@ -1,4 +1,7 @@
 #!/bin/bash
+#818058, Arcega Vela, Hector, [T], [2], [A]
+#821038, Alonso Gutierrez, Simon, [T], [2], [A]
+
 if [ $# != 1 ]
 then
     echo "Sintaxis: practica2_3.sh <nombre_archivo>"
