@@ -49,7 +49,7 @@ for i in $(ls)
 do
 	if [ -x "$i" -a -f "$i" ]
   then
-	echo "$i ha sido copiado a $nombreDirectorio"
+	echo "./$i ha sido copiado a $nombreDirectorio"
   	cp $i $nombreDirectorio
     contador=$((contador+1))
   fi
