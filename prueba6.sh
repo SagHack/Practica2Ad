@@ -12,7 +12,7 @@ directorioHome=$(pwd)
 #Buscamos la cantidad de directorios que sigan el patron
 NdirDest=$(find bin??? -type d | wc -l)
 #Comprobamos si hay algún directorio temporal ya creado
-if [ "$NdirDest" -eq 0]
+if [ "$NdirDest" -eq 0 ]
 then
     #Creamos el archivo binXXX y nos quedamos con su nombre para crear el directorio
     nombreDirectorio=$(mktemp binXXX)
@@ -53,4 +53,9 @@ do
     contador=$((contador+1))
   fi
 done
-echo "Se han copiado $contador archivos"
+if [ "$contador" -eq 0 ]
+then
+    echo "No se ha copiado ningun archivo"
+else
+    echo "Se han copiado $contador archivos"
+fi
