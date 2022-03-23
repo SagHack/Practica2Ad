@@ -10,7 +10,7 @@ directorioOrigen=$(pwd)
 cd
 directorioHome=$(pwd)
 #Buscamos la cantidad de directorios que sigan el patron
-NdirDest=$(find bin??? -type d | wc -l)
+NdirDest=$(find bin??? -type d 2> /dev/null | wc -l)
 #Comprobamos si hay algún directorio temporal ya creado
 if [ "$NdirDest" -eq 0 ]
 then
@@ -18,6 +18,7 @@ then
     nombreDirectorio=$(mktemp binXXX)
     rm -f $nombreDirectorio
     mkdir $nombreDirectorio
+    $nombreDirectorio="$directorioHome/$nombreDirectorio"
     echo "Se ha creado el directorio $nombreDirectorio"
 else
     dirDest=$(find bin??? -type d)
